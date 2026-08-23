@@ -839,7 +839,7 @@ def reask_genai_tools(
 
     kwargs["contents"].append(function_call_content)
     kwargs["contents"].append(
-        types.Content(role="tool", parts=[function_response_part])
+        types.Content(role="user", parts=[function_response_part])
     )
     return kwargs
 
